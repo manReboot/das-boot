@@ -118,6 +118,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/boot/controller/ControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
