@@ -30,9 +30,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.h2database/h2
     compile 'com.h2database:h2:1.4.197'
+    compile 'org.flywaydb:flyway-core:5.1.4'
 
-    // Use JUnit test framework
-    testCompile 'junit:junit:4.12'
+    //for testing
+    testCompile 'org.springframework.boot:spring-boot-started-test'
 }
 
 // In this section you declare where to find the dependencies of your project
