@@ -1,3 +1,5 @@
+package com.boot.controller;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
