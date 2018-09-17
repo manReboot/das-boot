@@ -11,6 +11,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
@@ -38,7 +39,9 @@ public class ControllerTest {
         Optional<Shipwreck> t = Optional.of(sw);
 
         when(shipWreckRepo.findById(1l)).thenReturn(t);
+
         Shipwreck wreck = sc.getShipwreck(1L);
+        verify(shipWreckRepo).findById(1l);
         assertEquals(1l,wreck.getId().longValue());
     }
 
