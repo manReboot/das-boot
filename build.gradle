@@ -16,7 +16,7 @@ plugins {
 }
 
 // Define the main class for the application
-mainClassName = 'com.boot.main.com.boot.main.App'
+mainClassName = 'com.boot.main.com.boot.App'
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
