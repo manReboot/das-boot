@@ -33,7 +33,7 @@ dependencies {
     compile 'org.flywaydb:flyway-core:5.1.4'
 
     //for testing
-    testCompile 'org.springframework.boot:spring-boot-started-test'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
 // In this section you declare where to find the dependencies of your project
