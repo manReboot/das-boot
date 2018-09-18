@@ -18,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * Created by 607880661 on 18/09/2018.
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 
 public class WebIntegrationTest {
 
@@ -26,7 +26,7 @@ public class WebIntegrationTest {
     public void testListAll()
     {
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:9090/api/v1/shipwrecks",String.class);
+        ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8080/api/v1/shipwrecks",String.class);
 
         assertThat(response.getStatusCode(),equalTo(HttpStatus.OK));
     }
